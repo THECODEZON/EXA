@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+</head>
+<style>
+   center{
+    font-size: 60px;
+    background-color: aqua;
+   }
+   .our{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #007bff;
+}
+
+.names {
+    
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust min and max width as needed */
+    gap: 10px; /* Optional gap between items */
+    background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid black;
+    width: 150px;
+}
+img{
+    height: auto;
+    width: 100%;
+}
+.doctor {
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.names {
+    border-radius: 7px;
+   background-color: #00d7f3;
+    border: transparent;
+    overflow: hidden;
+    flex: 1; /* Allow the .names divs to grow and fill available space */
+    margin-right: 20px; /* Optional margin between .names divs */
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input, select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+      
+  nav {
+    background-color: #045d65;
+    color: white;
+    padding: 4px;
+}
+
+.imp ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.imp ul li {
+    margin-left: 20px;
+}
+
+.img1 {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.img1:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.imp ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .imp ul {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+    
+</style>
+
+
+
+
+
+<body>
+    <nav>
+        <div class="imp">
+            <ul class="menu">
+                
+                <li><img class="img1" src="e1.png" alt=""><a href="#">Email: mini1415@email.com </a></li>
+                <li><img class="img1" src="p1.png" alt=""><a href="#">Contact us: 6267093990 </a></li>
+            </ul>
+            <!-- Mobile Menu Toggle Button -->
+            <div class="mobile-menu">
+                <img class="img1" src="menu_12319961.png" alt="">
+            </div>
+            
+        </div>
+    </nav>
+    <section>
+        <center>10% discount on online booking</center>
+
+        <div class="our">Our best doctor's</div>
+        <div class="doctor">
+            <div class="names">
+                <div class="doc1">
+                <img src="doc1.webp" alt="img1">
+                <h4>DR. MINI DAS</h4>
+                <P>Paediatric (Ped) Surgery, Paediatric (Ped) Urology <br>
+                    <span>Experience: 40+ years</span> <br>
+                    
+                    <span>Gender: male</span> <br>
+                </P>
+
+                </div>  
+            </div>
+            <div class="names">
+                <div class="doc1">
+                <img src="doc2.avif" alt="img1">
+                <h4>DR. MINI DAS</h4>
+                <P>Paediatric (Ped) Surgery, Paediatric (Ped) Urology <br>
+                    <span>Experience: 40+ years</span> <br>
+                    <span>Gender: male</span> <br>
+                </P>
+
+                </div>  
+            </div>
+            <div class="names">
+                <div class="doc1">
+                <img src="doc9.jpeg" alt="img1">
+                <h4>DR. Sushmita Singh</h4>
+                <P>Paediatric (Ped) Surgery, Paediatric (Ped) Urology <br>
+                    <span>Experience: 40+ years</span> <br>
+                    <span>Gender: male</span> <br>
+                </P>
+
+                </div>  
+            </div>
+        </div>
+        <div class="doctor">
+            <div class="names">
+                <div class="doc1">
+                <img src="doc10.webp" alt="img1">
+                <h4>DR. John Smith</h4>
+                <P>Paediatric (Ped) Surgery, Paediatric (Ped) Urology <br>
+                    <span>Experience: 40+ years</span> <br>
+                    <span>Gender: male</span> <br>
+                </P>
+
+                </div>  
+            </div>
+            <div class="names">
+                <div class="doc1">
+                <img src="doc6.jpeg" alt="img1">
+                <h4>DR. Sushmita Singh</h4>
+                <P>Paediatric (Ped) Surgery, Paediatric (Ped) Urology <br>
+                    <span>Experience: 40+ years</span> <br>
+                    <span>Gender: male</span> <br>
+                </P>
+
+                </div>  
+            </div>
+            <div class="names">
+                <div class="doc1">
+                <img src="doc7.jpeg" alt="img1">
+                <h4>DR. Rani Sharma</h4>
+                <P>Paediatric (Ped) Surgery, Paediatric (Ped) Urology <br>
+                    <span>Experience: 40+ years</span> <br>
+                    <span>Gender: male</span> <br>
+                </P>
+
+                </div>  
+            </div>
+        </div>
+        <div class="doctor">
+            <div class="names">
+                <div class="doc1">
+                <img src="doc8.jpeg" alt="img1">
+                <h4>DR. Nupur Das</h4>
+                <P>Paediatric (Ped) Surgery, Paediatric (Ped) Urology <br>
+                    <span>Experience: 40+ years</span> <br>
+                    <span>Gender: male</span> <br>
+                </P>
+
+                </div>  
+            </div>
+            <div class="names">
+                <div class="doc1">
+                <img src="doc9.jpeg" alt="img1">
+                <h4>DR. Vanshika Thakur</h4>
+                <P>Paediatric (Ped) Surgery, Paediatric (Ped) Urology <br>
+                    <span>Experience: 40+ years</span> <br>
+                    <span>Gender: male</span> <br>
+                </P>
+
+                </div>  
+            </div>
+            <div class="names">
+                <div class="doc1">
+                <img src="doc10.webp" alt="img1">
+                <h4>DR. Priya Malik</h4>
+                <P>Paediatric (Ped) Surgery, Paediatric (Ped) Urology <br>
+                    <span>Experience: 40+ years</span> <br>
+                    <span>Gender: male</span> <br>
+                </P>
+
+                </div>  
+            </div>
+        </div>
+
+        <div action="http://127.0.0.1:3000/formprocess" method=post class="container">
+            <h2>Book Appointment</h2>
+            <form id="appointmentForm">
+              <label for="patientName">Patient Name:</label>
+              <input type="text" id="patientName" name="patientName" required><br><br>
+              <label for="doctor">Choose a Doctor:</label>
+              <select id="doctor" name="doctor" required>
+                <option value="">Select Doctor</option>
+                <option value="Dr. Mini Das">Dr. Mini Das</option>
+                <option value="Dr. John Smith">Dr. John Smith</option>
+                <option value="Dr. John Smith">Dr. sushmita Singh</option>
+                <option value="Dr. John Smith">Dr. Rani sharma</option>
+                <option value="Dr. John Smith">Dr. Nupur Das</option>
+                <option value="Dr. John Smith">Dr. Vanshika Thakur</option>
+                <!-- Add more options for other doctors -->
+              </select><br><br>
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" required><br><br>
+              <button class="btn" type="submit">Book Appointment</button>
+            </form>
+            <div id="confirmation"></div>
+          </div>
+        
+    </section>
+</body>
+</html>

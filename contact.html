@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  
+    <center>Don't have an account?! Want to join us?!</center>
+    <!-- <form action="http://127.0.0.1:8000/formprocess" method=GET> -->
+    <form action="http://127.0.0.1:3000/formprocess" method=post>
+        <div>
+            <div class="form-group">
+                <label for="name">First name:</label>
+                <input type="text" name="fname" placeholder="First Name">
+            </div>
+            
+            <div class="form-group">
+                <label for="lname">Last name:</label>
+                <input type="text" name="lname" placeholder="Last Name">
+            </div>
+            
+            <h4>Gender</h4>
+            <div class="form-group">
+                
+                <input type="radio" id="male" name="gender" >
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" >
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender">
+                <label for="female">other</label>
+                
+            </div>
+            
+            <div class="form-group">
+                <h4>Select city</h4>
+               
+                <select id="city" name="city">
+                    <option>Jalandhar</option>
+                    <option>Delhi</option>
+                    <option>Raipur</option>
+                    <option>Kanpur</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <h4>Address</h4>
+                
+                <textarea id="address" rows="7" cols="50"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <h4>Password</h4>
+               
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" value="agreed">
+                <h3> I agree to the terms and conditions</h3>
+            </div>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
